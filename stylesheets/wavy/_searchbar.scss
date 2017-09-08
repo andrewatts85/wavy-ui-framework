@@ -1,0 +1,38 @@
+.search-box {
+  margin: 1em;
+  overflow: hidden;
+  text-align: center;
+}
+
+.search-box > input[type=search] {
+  border: 1px solid gainsboro;
+  border-right: none;
+  float: left;
+  padding: .2em;
+  width: 80%;
+}
+
+.search-box > input[type=submit] {
+  cursor: pointer;
+  background-color: $lightblue;
+  border: 1px solid $lightblue;
+  border-left: none;
+  color: white;
+  float: left;
+  padding: .2em;
+  width: 20%;
+  &:hover {
+    background-color: $hoverblue;
+  }
+}
+
+/* extra style types */
+.rounded {
+  border-radius: 3px;
+}
+
+.bordered {
+  background-color: $lightblue;
+  border: 1px solid gainsboro;
+  padding: 3px;
+}

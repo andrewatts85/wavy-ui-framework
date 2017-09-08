@@ -1,0 +1,38 @@
+.accordion {
+  border: 1px solid gainsboro;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  margin: 1em;
+}
+
+.accordion .accordion-tab {
+  border-bottom: .5px solid gainsboro;
+}
+
+.accordion .accordion-tab > input {
+  display: none;
+}
+
+.accordion .accordion-tab > label {
+  color: white;
+  cursor: pointer;
+  background-color: $blue600;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: .5em;
+  width: 100%;
+}
+
+.accordion .accordion-tab .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.accordion .accordion-tab input:checked ~ .accordion-content {
+  max-height: 100em;
+  -webkit-transition: max-height 1s;
+  transition: max-height 1s;
+}

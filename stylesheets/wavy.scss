@@ -3,14 +3,21 @@
 
 // Reset and dependencies
 @import "wavy/normalize";
+// Font Awesome 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 // Core CSS
 @import "wavy/flexgrid";
 
 // Components
+@import "wavy/accordion";
+@import "wavy/buttons";
+@import "wavy/footer";
 @import "wavy/navbar";
+@import "wavy/searchbar";
 
 // Components w/ JavaScript
 

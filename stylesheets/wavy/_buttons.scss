@@ -1,0 +1,31 @@
+a.btn, 
+button.btn, 
+div.btn, 
+input.btn {
+  color: white;
+  background-color: $lightblue;
+  border: 1px solid $lightblue;
+  border-radius: 3px;
+  font-weight: 600;
+  margin: .5em;
+  padding: .5em;
+  width: 10em;
+}
+
+a.btn {
+  display: block;
+  text-decoration: none;
+}
+
+a.btn, 
+div.btn {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+button.btn, 
+div.btn,
+input.btn {
+  cursor: pointer;
+}
