@@ -1,0 +1,75 @@
+.tab-component {
+    margin: 1em;
+    min-height: 5em;
+    position: relative;
+}
+
+.tab-component .tab>input {
+    display: none;
+}
+
+.tab-component .tab>label {
+    color: white;
+    cursor: pointer;
+    background-color: $blue600;
+    border: 1px solid gainsboro;
+    border-bottom: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+    margin-right: .3em;
+    padding: .5em;
+}
+
+.tab-component .tab .content {
+    background-color: white;
+    border: 1px solid gainsboro;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 .5em 0 .5em;
+    position: absolute;
+    top: 2.15em;
+    visibility: hidden;
+    width: 100%;
+}
+
+.tab-component .tab input:checked~label {
+    position: relative;
+    background-color: white;
+    border-bottom: none;
+    color: black;
+    z-index: 1;
+}
+
+.tab-component .tab input:checked~.content {
+    visibility: visible;
+}
+
+@media screen and (max-width: 480px) {
+    .tab-component .tab {
+        label {
+            border-bottom: none;
+            display: block;
+            width: 100%;
+        }
+        .content {
+            border-top: none;
+            max-height: 0em;
+            overflow: hidden;
+            position: initial;
+            visibility: visible;
+        }
+        input:checked~label {
+            border-bottom: 1px solid gainsboro;
+            background-color: $gray200;
+            font-weight: bold;
+        }
+        input:checked~.content {
+            max-height: 100em;
+            -webkit-transition: max-height 3s;
+            transition: max-height 3s;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+/* CUSTOM CSS */
+/**************/
+
+/* Navigation */
+/**************/
+.navbar>div a img {
+    height: 5em;
+    position: absolute;
+    top: -1em;
+    width: 5em;
+}
+
+#menu-list li {
+    float: right;
+    margin-right: 2em;
+}
+
+#menu-list li:first-child {
+    margin-right: 5em;
+}
+
+/* Banner */
+/**********/
+.banner {
+    color: white;
+    background-color: #1A237E;
+    height: 15em;
+    text-align: center;
+    top: 4.7em;
+    width: 100%;
+    z-index: -1;
+}
+
+.banner h1 {
+    font-family: Pacifico;
+    margin-top: 2.5em;
+}
+
+/* Description */
+/***************/
+.description p {
+    text-align: center;
+}
+
+/* Headline */
+/************/
+.headline h1 {
+    color: lightslategray;
+    background-color: #E0F7FA;
+    font-size: 3em;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Component Sections */
+/**********************/
+.ui-component {
+    border: 1px solid #E0F7FA;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    padding: 1em;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Button Components */
+/*********************/
+.wavy-buttons .col {
+    margin: .3em;
+}
+
+.wavy-buttons .col .btn {
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+}
+
+/* Code Snippets */
+/*****************/
+.ui-component .raw-code .col {
+    background-color: black;
+    /*border: 1px solid #1A237E;*/
+    border-radius: 3px;
+    color: white;
+    margin-top: 1em;
+    padding: .5em;
+}
+
+.ui-component .raw-code code {
+    font-family: monospace;
+}
+
+/* Media Queries */
+/*****************/
+@media screen and (max-width: 680px) {
+    /* Navigation */
+    /**************/
+    .navbar>div a img {
+        height: 3.5em;
+        top: -.7em;
+        width: 3.5em;
+    }
+    #menu-list li {
+        float: none;
+        margin-right: 0;
+    }
+    #menu-list li:first-child {
+        margin-right: 0;
+    }
+    
+    /* Component Sections */
+    /**********************/
+    .ui-component {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    }
+}
