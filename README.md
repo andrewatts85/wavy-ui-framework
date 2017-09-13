@@ -1,2 +1,2 @@
-# Wavy UI Framework
-Minimal css framework.
+# Wavy
+Mini UI Framework
