@@ -12,12 +12,12 @@
     width: 5em;
 }
 
-#menu-list li {
+#menu-list>li {
     float: right;
     margin-right: 2em;
 }
 
-#menu-list li:first-child {
+#menu-list>li:first-child {
     margin-right: 5em;
 }
 
@@ -72,6 +72,10 @@
     width: 80%;
 }
 
+.ui-component .row .col {
+    position: relative;
+}
+
 
 /* Button Components */
 /*********************/
@@ -103,10 +107,169 @@
     padding: .5em;
 }
 
+.ui-component .raw-code {
+    overflow: auto;
+}
+
 .ui-component .raw-code code {
     font-family: monospace;
 }
 
+/* Search Box Component */
+/************************/
+.ui-component .wavy-search-box .search-box {
+    margin: 0;
+    width: 100%;
+}
+
+/* Flex Grid Section */
+/*********************/
+.ui-component .wavy-flex-grid {
+    /*text-align: center;*/
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+}
+
+.ui-component .wavy-flex-grid .flex-grid {
+    text-align: center;
+}
+
+.ui-component .wavy-flex-grid .flex-grid .col {
+    background-color: #03A9F4;
+    color: white;
+    margin: .2em;
+    padding: .2em;
+}
+
+
+.ui-component .wavy-flex-grid .flex-grid .raw-code code {
+    text-align: left;
+}
+
+/* Accordion Component */
+/***********************/
+.ui-component .accordion {
+    margin: 0;
+}
+
+.ui-component .accordion .accordion-tab p {
+    padding: .5em;
+}
+
+/* Flipcard Component */
+/**********************/
+.ui-component .flipcard {
+    /*border: 1px solid red;*/
+    /*display: inline-block;*/
+    /*float: left;*/
+    height: 3.5em;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    /*padding: .2em;*/
+    /*position: static;*/
+}
+
+#ui-flipcard .row:first-child {
+    /*align-content: center;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+    /*overflow: hidden;*/
+    /*flex-direction: column wrap;*/
+}
+
+#ui-flipcard .row:first-child .col {
+    /*border: 1px solid yellow;*/
+    /*overflow: hidden;*/
+    padding: .2em;
+}
+
+.ui-component .flipcard .front,
+.ui-component .flipcard .back {
+    border-radius: 0;
+    /*
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    */
+    /*display: inline-block;*/
+    /*float: left;*/
+    /*padding: 0;*/
+    /*position: static;*/
+    /*margin: 0;*/
+    /*width: 100%;*/
+}
+
+/* Tab Component */
+/*****************/
+.ui-component .tab-component {
+    margin: 0;
+}
+
+/* Navbar Component */
+/********************/
+.ui-component .navbar {
+}
+
+.ui-component .navbar #menu-icon {
+    
+}
+
+.ui-component .navbar #menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.ui-component .navbar #menu-list li {
+    margin: 0;
+}
+
+.ui-component .navbar #menu-list .drop-down .sub-list {
+    z-index: 10;
+}
+
+/* Footer Component */
+/********************/
+#ui-footer col {
+    /*overflow: hidden;*/
+}
+
+.ui-component .bottom-footer {
+    position: static;
+}
+
+.ui-component .bottom-footer .col {
+    /*max-width: 100%;*/
+    overflow: hidden;
+    padding: 0;
+}
+
+.ui-component .bottom-footer .submit-email button{
+    width: 40%;
+}
+
+/* End Footer */
+/**************/
+.copy {
+    background-color: #1A237E;
+    /*bottom: 0;*/
+    color: white;
+    font-size: small;
+    overflow: hidden;
+    padding: 2em;
+    /*position: absolute;*/
+    text-align: center;
+}
+
+.copy a {
+    color: mediumvioletred;
+    text-decoration: none;
+}
 
 /* Media Queries */
 /*****************/
@@ -119,13 +282,22 @@
         top: -.7em;
         width: 3.5em;
     }
+    
     #menu-list li {
         float: none;
         margin-right: 0;
     }
+    
     #menu-list li:first-child {
         margin-right: 0;
     }
+    
+    /* Navbar Component */
+    /********************/
+    .ui-component .navbar #menu-list {
+        display: none;
+    }
+    
     /* Component Sections */
     /**********************/
     .ui-component {
@@ -133,5 +305,14 @@
         -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    #ui-footer .bottom-footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
 }

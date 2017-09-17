@@ -26,8 +26,20 @@
                 -->
 
                 <ul id="menu-list">
-                    <li><a href="#">Download</a></li>
-                    <li><a href="#">Components</a></li>
+                    <li><a href="https://github.com/andrewatts85/wavy-ui-framework">Download</a></li>
+                    <li class="drop-down">
+                        <a href="#">Components</a>
+                        <ul class="sub-list">
+                            <li><a href="#ui-buttons">Buttons</a></li>
+                            <li><a href="#ui-search-box">Search Box</a></li>
+                            <li><a href="#ui-flex-grid">Flex Grid</a></li>
+                            <li><a href="#ui-accordion">Accordion</a></li>
+                            <li><a href="#ui-flipcard">Flipcard</a></li>
+                            <li><a href="#ui-tab-component">Tabs</a></li>
+                            <li><a href="#ui-navbar">Navbar</a></li>
+                            <li><a href="#ui-footer">Footer</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -52,7 +64,7 @@
         </div>
     </div>
 
-    <div class="ui-component row">
+    <div class="ui-component row" id="ui-buttons">
         <div class="wavy-buttons row">
             <div class="col">
                 <button class="btn">Button</button>
@@ -80,7 +92,7 @@
         </div>
     </div>
 
-    <div class="ui-component row">
+    <div class="ui-component row" id="ui-search-box">
         <div class="wavy-search-box row">
             <div class="col">
                 <div class="search-box rounded">
@@ -101,23 +113,509 @@
             </div>
         </div>
     </div>
-    
-    <div class="ui-component row">
+
+    <div class="ui-component row" id="ui-flex-grid">
+        <div class="wavy-flex-grid row">
+            <div class="col">
+                <div class="flex-grid">
+                    <div class="row">
+                        <div class="col">col</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">col</div>
+                    </div>
+                </div>
+                
+                <div class="raw-code row">
+                    <div class="col">
+                        <code>
+                            &lt;div class=&quot;row&quot;&gt;<br>
+                               &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                            &lt;/div&gt;<br><br>
+        
+                            &lt;div class=&quot;row&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                            &lt;/div&gt;<br><br>
+        
+                            &lt;div class=&quot;row&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                            &lt;/div&gt;<br><br>
+        
+                            &lt;div class=&quot;row&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                            &lt;/div&gt;<br><br>
+        
+                            &lt;div class=&quot;row&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                            &lt;/div&gt;<br><br>
+        
+                            &lt;div class=&quot;row&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                            &lt;/div&gt;<br><br>
+        
+                            &lt;div class=&quot;row&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;col&lt;/div&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui-component row" id="ui-accordion">
         <div class=" row">
             <div class="col">
-                
+                <div class="accordion">
+                    <!-- Item 1 -->
+                    <div class="accordion-tab">
+                        <input type="checkbox" id="topic-1" name="toggle" />
+                        <label class="topic" for="topic-1">Topic One</label>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ante velit, tristique ut tincidunt non, vestibulum quis erat. Sed eget pulvinar tellus, et sodales urna. Aenean pretium, orci sit amet.</p>
+                        </div>
+                    </div>
+            
+                    <!-- Item 2 -->
+                    <div class="accordion-tab">
+                        <input type="checkbox" id="topic-2" name="toggle" />
+                        <label class="topic" for="topic-2">Topic Two</label>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ante velit, tristique ut tincidunt non, vestibulum quis erat. Sed eget pulvinar tellus, et sodales urna. Aenean pretium, orci sit amet.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="raw-code row">
             <div class="col">
                 <code>
-                    
+                    &lt;div class=&quot;accordion&quot;&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Item 1 --&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;accordion-tab&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;checkbox&quot; id=&quot;topic-1&quot; name=&quot;toggle&quot; /&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class=&quot;topic&quot; for=&quot;topic-1&quot;&gt;Topic One&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;accordion-content&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ante velit, tristique ut tincidunt non, vestibulum quis erat. Sed eget pulvinar tellus, et sodales urna. Aenean pretium, orci sit amet.&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br><br>
+                
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Item 2 --&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;accordion-tab&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;checkbox&quot; id=&quot;topic-2&quot; name=&quot;toggle&quot; /&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label class=&quot;topic&quot; for=&quot;topic-2&quot;&gt;Topic Two&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;accordion-content&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ante velit, tristique ut tincidunt non, vestibulum quis erat. Sed eget pulvinar tellus, et sodales urna. Aenean pretium, orci sit amet.&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
                 </code>
             </div>
         </div>
     </div>
     
+    <div class="ui-component row" id="ui-flipcard">
+        <div class=" row">
+            <div class="col">
+                <div class="flipcard">
+                    <div class="back">
+                        Back face
+                    </div>
+                    <div class="front">
+                        Front face
+                    </div>
+                </div>
+            </div>   
+            <div class="col">
+                <div class="flipcard">
+                    <div class="back">
+                        Back face
+                    </div>
+                    <div class="front">
+                        Front face
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="raw-code row">
+            <div class="col">
+                <code>
+                    &lt;div class=&quot;flipcard&quot;&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;back&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back face<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;front&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Front face<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &lt;/div&gt;<br><br>
+                    
+                    &lt;div class=&quot;flipcard&quot;&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;back&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back face<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;front&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Front face<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+                </code>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ui-component row" id="ui-tab-component">
+        <div class=" row">
+            <div class="col">
+                <div class="tab-component">
+                    <div class="tab">
+                        <input type="radio" id="tab-1" name="tabs" checked/>
+                        <label for="tab-1">Home Decor</label>
+                        <div class="content">
+                            <p>Browse through our list of Home Decor Items</p>
+                        </div>
+                    </div>
+            
+                    <div class="tab">
+                        <input type="radio" id="tab-2" name="tabs" />
+                        <label for="tab-2">Furniture</label>
+                        <div class="content">
+                            <p>Flash Sale on Living Room and Bedroom Furniture</p>
+                        </div>
+                    </div>
+            
+                    <div class="tab">
+                        <input type="radio" id="tab-3" name="tabs" />
+                        <label for="tab-3">Kitchen</label>
+                        <div class="content">
+                            <p>Bring the best out of the masterchef in you!!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="raw-code row">
+            <div class="col">
+                <code>
+                    &lt;div class=&quot;tab-component&quot;&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;tab&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;radio&quot; id=&quot;tab-1&quot; name=&quot;tabs&quot; checked/&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=&quot;tab-1&quot;&gt;Home Decor&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;content&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Browse through our list of Home Decor Items&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br><br>
+                
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;tab&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;radio&quot; id=&quot;tab-2&quot; name=&quot;tabs&quot; /&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=&quot;tab-2&quot;&gt;Furniture&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;content&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Flash Sale on Living Room and Bedroom Furniture&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br><br>
+                
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;tab&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;radio&quot; id=&quot;tab-3&quot; name=&quot;tabs&quot; /&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for=&quot;tab-3&quot;&gt;Kitchen&lt;/label&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;content&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Bring the best out of the masterchef in you!!&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ui-component row" id="ui-navbar">
+        <div class=" row">
+            <div class="col">
+                <header class="navbar row">
+                    <div class="col">
+                        <a href="#" id="logo">logo</a>
+                    </div>
+                    <div class="col">
+                        <nav>
+                            <a href="#menu-list" id="menu-icon"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+                            
+                            <ul id="menu-list">
+                                <li><a href="#">Home</a></li>
+                                <li class="drop-down">
+                                    <a href="#">Articles</a>
+                                    <ul class="sub-list">
+                                        <li><a href="#">Item 1</a></li>
+                                        <li><a href="#">Item 2</a></li>
+                                        <li><a href="#">Item 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="drop-down">
+                                    <a href="#">Projects</a>
+                                    <ul class="sub-list">
+                                        <li><a href="#">Item 1</a></li>
+                                        <li><a href="#">Item 2</a></li>
+                                        <li><a href="#">Item 3</a></li>
+                                        <li><a href="#">Item 4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">About Me</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+        <div class="raw-code row">
+            <div class="col">
+                <code>
+                    &lt;header class=&quot;navbar row&quot;&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot; id=&quot;logo&quot;&gt;logo&lt;/a&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;#menu-list&quot; id=&quot;menu-icon&quot;&gt;&lt;i class=&quot;fa fa-bars fa-2x&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;<br>
+                                
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul id=&quot;menu-list&quot;&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class=&quot;drop-down&quot;&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot;&gt;Articles&lt;/a&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=&quot;sub-list&quot;&gt;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class=&quot;drop-down&quot;&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot;&gt;Projects&lt;/a&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=&quot;sub-list&quot;&gt;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About Me&lt;/a&gt;&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &lt;/header&gt;
+                </code>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ui-component row" id="ui-footer">
+        <div class=" row">
+            <div class="col">
+                <footer class="bottom-footer">
+                    <div class="row">
+                        <div class="col">
+                            <ul>
+                                <li>
+                                    <h3>Links</h3>
+                                </li>
+                                <li><a href="#">FAQ's</a></li>
+                                <li><a href="#">Feedback</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Bitcoin</a></li>
+                            </ul>
+                            <hr>
+                        </div>
+            
+                        <div class="col">
+                            <ul>
+                                <li>
+                                    <h3>Stay Tuned</h3>
+                                </li>
+                                <li>Connect with us and stay in the loop.</li>
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                                    <!--
+                                    <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                                    -->
+                                </li>
+                            </ul>
+                            <hr>
+                        </div>
+            
+                        <div class="col">
+                            <ul>
+                                <li>
+                                    <h3>Email Updates</h3>
+                                </li>
+                                <li>Be the first to hear about our announcements.</li>
+                                <li>
+                                    <div class="submit-email">
+                                        <input type="email" />
+                                        <button>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <!--
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                -->
+                                </button>
+                                        <!-- 
+                                <input type="submit" value="" /> 
+                                -->
+                                    </div>
+                                </li>
+                            </ul>
+                            <hr>
+                        </div>
+            
+                        <div class="col">
+                            <ul>
+                                <li>
+                                    <h3>Contact Us</h3>
+                                </li>
+                                <li>Questions? We've got answers. Try us.</li>
+                                <li><a href="#" class="btn">Email Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <p>Copyright &copy; Ralph Angel 2017</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <div class="raw-code row">
+            <div class="col">
+                <code>
+                    &lt;footer class=&quot;bottom-footer&quot;&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;row&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Links&lt;/h3&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;FAQ's&lt;/a&gt;&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Feedback&lt;/a&gt;&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Terms of Use&lt;/a&gt;&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Bitcoin&lt;/a&gt;&lt;/li&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br><br>
+                
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Stay Tuned&lt;/h3&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Connect with us and stay in the loop.&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook-square fa-2x&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-instagram fa-2x&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br><br>
+                
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Email Updates&lt;/h3&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Be the first to hear about our announcements.&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;submit-email&quot;&gt;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type=&quot;email&quot; /&gt;<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class=&quot;fa fa-envelope-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br><br>
+                
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Contact Us&lt;/h3&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Questions? We've got answers. Try us.&lt;/li&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Email Us&lt;/a&gt;&lt;/li&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;row&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;col&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Copyright &amp;copy; Ralph Angel 2017&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &lt;/footer&gt;
+                </code>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col">
+            <div class="copy">
+                <span>2017 &copy; <a href="https://github.com/andrewatts85/responsive-portfolio">Andre Watts</a></span><br><span>Made with thinking power and determination.</span>
+            </div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 
